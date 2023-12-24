@@ -5,11 +5,11 @@
 */
 
 function isAnagram(str1, str2) {
-  str1 = str1.toLocaleLowerCase()
-  str2 = str2.toLocaleLowerCase()
-  return str1.split('').sort().join() == str2.split('').sort().join() // Directly checking the arrays will not work {checks reference}
+  str1 = str1.toLocaleLowerCase();
+  str2 = str2.toLocaleLowerCase();
+  return str1.split("").sort().join() == str2.split("").sort().join(); // Directly checking the arrays will not work {checks reference}
 }
 
-console.log(isAnagram('Hello', 'olleH'))
+console.log(isAnagram("Hello", "olleH"));
 
 module.exports = isAnagram;
