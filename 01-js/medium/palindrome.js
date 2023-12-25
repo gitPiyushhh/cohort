@@ -4,7 +4,11 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  str = str.toLocaleLowerCase();
+  return str.split('').reverse('').join('') === str ? true : false
 }
+
+console.log(isPalindrome('hello'))
+console.log(isPalindrome('nan'))
 
 module.exports = isPalindrome;
